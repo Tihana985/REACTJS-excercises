@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercises</title>
+</head>
+<body>
+  <script>
+  //kreirajte niza od avtomobili koi sto vnatre kje imaat godina, marka i model
+    
+  let cars = [
+      {year: 2021, mark: "BMW", model: "GLC"},
+      {year: 2018, mark: "Reno", model: "Megan"},
+      {year: 2021, mark: "Citroen", model: "C4"},
+    ];
+
+  // potoa so map da go ispecatime modelot i koja godina e
+    let mapCars = cars.map((car)=>{
+      let modelYear = car.model + ' ' + car.year;
+      return modelYear;
+    })
+     console.log(mapCars);
+
+  //da napravime filter na site avtomobili koi se postari od 2010
+     let filteredCars = cars.filter((car) => car.year > 2010);
+     console.log(filteredCars);
+
+  //da probate dali postoi avtomobil so marka BMW
+     let findCar = cars.find((car) => car.mark === "BMW")
+     console.log(findCar);
+  </script>
+</body>
+</html>
