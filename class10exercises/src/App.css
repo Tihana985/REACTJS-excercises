@@ -36,8 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-*{
-  background-color: rgb(112, 112, 236);
-  font-style:inherit;
-}
